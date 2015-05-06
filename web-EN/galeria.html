@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Ecolleria S.L.</title>
+		<meta name="description" content="">
+		<meta name="author" content="Ivan">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="img/favicon.jpg">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css" />
+		<link rel="stylesheet" type="text/css" href="css/style-nosotros.css" />
+		<link rel="stylesheet" href="css/slider/example.css">
+		<!--<link rel="stylesheet" href="css/slider/font-awesome.min.css">-->
+		<link rel="stylesheet" href="css/slider/responsive.css">
+		<style>
+		</style>
+	</head>
+
+	<body>
+		<div id="zindex">
+			<div id="logo" >
+				<a href="index.html"><img src="img/logo-4.jpg"/ ></a>
+				<a href="../galeria.html"><img class="banderas" src="img/Espana.png" height="20px" width="20px"/></a>
+				<a href="#"><img class="banderas" src="img/united kingdom.png" height="20px" width="20px"/></a>
+				<div id="alinearMenu">
+					<ul class="menu">
+						<li>
+							<a href="#">Menu</a>
+							<ul>
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="nosotros.html">Company</a>
+								</li>
+								<li>
+									<a href="galeria.html">Photogallery</a>
+								</li>
+								<li>
+									<a href="ventajas.html">Advantages of recycled glass</a>
+								</li>
+								<li>
+									<a href="contacto.html">Contact us</a>
+								</li>
+								<li>
+									<a href="donde-estamos.html">Where we are</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div id="slides">
+					<a href="img/DSCN7265.JPG" target="_blank"><img src="img/DSCN7265.JPG"></a>
+					<a href="img/DSCN7268.JPG" target="_blank"><img src="img/DSCN7268.JPG"></a>
+					<a href="img/DSCN7270.JPG" target="_blank"><img src="img/DSCN7270.JPG"></a>
+					<a href="img/DSCN7272.JPG" target="_blank"><img src="img/DSCN7272.JPG"></a>
+					<a href="img/DSCN7273.JPG" target="_blank"><img src="img/DSCN7273.JPG"></a>
+					<a href="img/DSCN7280.JPG" target="_blank"><img src="img/DSCN7280.JPG"></a>
+					<a href="img/DSCN7286.JPG" target="_blank"><img src="img/DSCN7286.JPG"></a>
+					<a href="img/DSCN7269.JPG" target="_blank"><img src="img/DSCN7269.JPG"></a>
+					<a href="img/DSCN7287.JPG" target="_blank"><img src="img/DSCN7287.JPG"></a>
+					<a href="img/DSCN7288.JPG" target="_blank"><img src="img/DSCN7288.JPG"></a>
+					<a href="img/DSCN7271.JPG" target="_blank"><img src="img/DSCN7271.JPG"></a>
+					<a href="img/DSCN7289.JPG" target="_blank"><img src="img/DSCN7289.JPG"></a>20150505-WA0003
+					<a href="img/20150505-WA0003.png" target="_blank"><img src="img/20150505-WA0003.png"></a>
+					<a href="#" class="slidesjs-previous slidesjs-navigation"><img src="img/slide-anterior.png" /></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"><img src="img/slide-siguiente.png" /></a>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="textoFooter">
+					ECOLLERIA S.L. | Poligono Industrial El Carrascot
+					<br>
+					Carrer del Forn, 2 L'Olleria | Tel: +34 960 470 502 |
+					<br>
+					Fax: +34 962 200 173 | <a href="mailto:info@ecoglass.com">info@ecoglass.com</a>
+				</div>
+				<div id="redesSociales"  class="gris">
+					<a href="http://www.facebook.com/" target="_blank"><img src="img/facebook-icon.png"></a>
+					<a href="https://twitter.com/" target="_blank"><img src="img/twitter-icon.png"></a>
+					<a href="http://instagram.com/" target="_blank"><img src="img/instagram-icon.png"></a>
+					<a href="http://www.youtube.com/" target="_blank"><img src="img/youtube-icon.png"></a>
+				</div>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/vegas/jquery.vegas.js"></script>
+		<script src="js/main-nosotros.js"></script>
+		<script src="js/slider/jquery.slides.min.js"></script>
+		<script>
+			$(function() {
+				$('#slides').slidesjs({
+					width : 940,
+					height : 528,
+					navigation : {
+						active : false,
+						// [boolean] Generates next and previous buttons.
+						// You can set to false and use your own buttons.
+						// User defined buttons must have the following:
+						// previous button: class="slidesjs-previous slidesjs-navigation"
+						// next button: class="slidesjs-next slidesjs-navigation"
+						effect : "fade"
+						// [string] Can be either "slide" or "fade".
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

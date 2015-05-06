@@ -1,0 +1,333 @@
+@font-face {
+	font-family: "QuickSand";
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/QuickSand/Quicksand-Regular.otf');
+}
+
+body {
+	font-family: "QuickSand";
+	padding-top: 200px;
+}
+
+#logo {
+	/*-webkit-border-radius: 250px; /* Safari
+	 -moz-border-radius: 250px; /* Firefox
+	 border-radius: 250px;*/
+	position: absolute;
+	z-index: 3;
+	top: 0%;
+	left: 4%;
+	height: 150px;
+	width: 151px;
+	/*background-image: url('../img/carritopequenyo.png');*/
+	opacity: .9; /*le da opacidad al div*/
+	background-color: white;
+	text-align: center;
+}
+
+.banderas{
+	z-index:4;
+	position:relative;
+	left:30%;
+	top:5%;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	margin: 0;
+	float: left;
+	left: 0%;
+	height: 8%;
+	width: 100%;
+	opacity: .8;
+	background-color: white;
+	text-align: center;
+	padding: 0;
+}
+
+#presentacion {
+	position: absolute;
+	z-index: 2;
+	height: 450px;
+	width: 500px;
+	top: 5%;
+	left: 30%;
+	background-color: white;
+	/*padding-left: 20px;
+	 padding-top: 20px;
+	 padding-right: 20px;*/
+	-webkit-border-radius: 20px; /* Safari  */
+	-moz-border-radius: 20px; /* Firefox */
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px; /* hace el div redondo */
+	box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+	background-color: #F2F2F2;
+	/*opacity: .6;*/
+	padding: 10px;
+	text-align: center;
+	font-size:.9em;
+}
+
+#presentacion:hover, .container:hover, #footer:hover {
+	z-index: 4;
+}
+
+.container {
+	position: relative;
+	width: 50%;
+	z-index: 2;
+	background-color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	-webkit-border-radius: 20px; /* Safari  */
+	-moz-border-radius: 20px; /* Firefox */
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px; /* hace el div redondo */
+	box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+	background-color: #F2F2F2;
+}
+
+#textoFooter {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+	margin-top: 1%;
+}
+
+#redesSociales {
+	position: absolute;
+	top: -60%;
+	left: 80%;
+	height: 10%;
+	width: 20%;
+	padding-right: 0, 1%;
+}
+
+.gris img, #link1, #link2 {
+	filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+	filter: Gray(); /* IE4-8 and 9 */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.gris img:hover, #link1:hover, #link2:hover {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#alinearMenu {
+	position: absolute;
+	top: 60%;
+	left: -20%;
+}
+ul.menu {
+	float: right;
+	display: block;
+	margin-top: 38px;
+	margin-left: 50%;
+	list-style-type: none;
+}
+
+@-moz-document url-prefix() {
+    ul.menu {
+	margin-left: 0%;
+}
+}
+
+.menu li {
+	line-height: 15px;
+	font-size: 13px;
+	position: relative;
+	float: left;
+}
+.menu li a {
+	color: #000;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+.menu li a:hover {
+	background: #9c0101;
+	color: white;
+}
+.menu li ul {
+	display: none;
+	position: absolute;
+	top: 20px;
+	width: 180%;
+	background-color: #f4f4f4;
+	padding: 0;
+	list-style-type: none;
+}
+.menu li ul li {
+	width: 100px;
+	border: 1px solid #9c0101;
+	border-top: none;
+	padding: 10px 20px;
+}
+.menu li ul li:first-child {
+	border-top: 1px solid #9c0101;
+}
+.menu li ul li a {
+	width: 240px;
+	margin: 0;
+	padding: 0;
+}
+.menu li ul li a:hover {
+	width: 240px;
+	margin: 0;
+	color: #9c0101;
+	background: none;
+}
+
+#slides {
+	display: none
+}
+
+#slides .slidesjs-navigation {
+	margin-top: 3px;
+}
+
+#slides .slidesjs-previous {
+	margin-right: 5px;
+	float: left;
+}
+
+#slides .slidesjs-next {
+	margin-right: 5px;
+	float: left;
+}
+
+.slidesjs-pagination {
+	margin: 6px 0 0;
+	float: right;
+	list-style: none;
+}
+
+.slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url('../img/pagination.png');
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+	background-position: 0 -26px
+}
+
+#slides a:link, #slides a:visited {
+	color: #333
+}
+
+#slides a:hover, #slides a:active {
+	color: #9e2020
+}
+
+.navbar {
+	overflow: hidden
+}
+
+/* For tablets & smart phones */
+@media (max-width: 499px) {
+	/*#logo {
+		width: auto;
+	}*/
+	#textoFooter {
+		font-size: .9em;
+		width: auto;
+		height: auto;
+	}
+	#footer {
+		text-align: inherit;
+		width: 767px;
+		height: auto;
+	}
+	#presentacion {
+
+		height: 250px;
+		width: 250px;
+		top: 30%;
+		left: 10%;
+		font-size: .48em;
+	}
+}
+/* tablets entre 500 y 610 width*/
+@media (min-width: 500px) and (max-width: 610px) {
+
+	#presentacion {
+
+		height: 400px;
+		width: 400px;
+		top: 30%;
+		left: 10%;
+		font-size: .75em;
+	}
+
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+	/*#logo {
+		width: auto;
+	}*/
+
+	#textoFooter {
+		font-size: .9em;
+		width: auto;
+		height: auto;
+	}
+	#footer {
+		text-align: inherit;
+		width: 480px;
+		height: auto;
+	}
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 611px) and (max-width: 979px) {
+	.container {
+		width: 724px
+	}
+}
+
+/* For larger displays */
+@media (min-width: 1000px) {
+	.container {
+		width: 600px
+	}
+}
